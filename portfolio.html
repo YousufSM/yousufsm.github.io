@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/fav.png">
+  <!-- Author Meta -->
+  <meta name="author" content="Yousuf S Motiwala">
+  <!-- Meta Description -->
+  <meta name="description" content="A personal website built and deployed by Yousuf Motiwala using reference from Harrison Jansma's website.">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="portfolio">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Yousuf S Motiwala</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <!--
+    CSS
+    ============================================= -->
+  <link rel="stylesheet" href="css/linearicons.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="container main-menu">
+      <div class="row align-items-center justify-content-between d-flex">
+        <div class id="logo">
+          <a href="/">
+            <h3>Yousuf S Motiwala </h3>
+          </a>
+        </div>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="about">About</a></li> -->
+
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <!-- <li><a href="archive">Portfolio</a></li> -->
+            <li><a href="Yousuf_Motiwala_Resume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a>
+            </li>
+            <!-- <li><a href="huckleberry">Huck</a></li>
+              <li><a href="https://www.amyrayblog.com">The Wife</a> </li>
+              <li><a href="HarrisonJansmaResume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li> -->
+          </ul>
+
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- start banner Area -->
+  <section class="about-banner">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="about-content col-lg-12">
+          <h1 class="text-white">
+            How have I helped businesses?
+          </h1>
+          <p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span> <a
+              href="portfolio.html"> Portfolio</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End banner Area -->
+
+
+
+  <style>
+    .filter-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .filter-button {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      background-color: #89b7fb;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .main-button {
+      /* display: inline-block; */
+      padding: 5px 10px;
+      /* margin: 5px; */
+      background-color: #0d54bf;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      /* cursor: pointer; */
+    }
+
+    .filter-button:hover {
+      background-color: #8a91fe;
+    }
+
+    .industry-buttons {
+      margin-bottom: 20px;
+
+    }
+
+    .portfolio-photo {
+      object-fit: contain;
+      /* or 'contain' */
+      width: 100%;
+      /* Ensure the width is set to 100% */
+      height: 100%;
+      /* And height is set to auto to maintain aspect ratio */
+    }
+
+    /* hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 3px solid #2c03fc;
+        margin: 1em 0;
+        padding: 0;
+      } */
+  </style>
+
+  <body>
+    <section class="sample-text-area" style="background-color: white;">
+      <!-- <div class="container"> -->
+        <div class="col-lg-10 col-md-10 col-sm-10 mx-auto">
+          <div class="filter-container">
+            <!-- Industry filter buttons -->
+            <div class="industry-buttons">
+              <button class="main-button">Select Industry</button>
+              <button class="filter-button" data-filter="all">All Industries</button>
+              <button class="filter-button" data-filter="retail">Retail</button>
+              <button class="filter-button" data-filter="telco">Telecommunication</button>
+              <button class="filter-button" data-filter="tech">technology</button>
+              <button class="filter-button" data-filter="b2b">B2B</button>
+              <button class="filter-button" data-filter="government">Government</button>
+              <button class="filter-button" data-filter="industrialgoods">Industrial Goods</button>
+              <button class="filter-button" data-filter="bank">Banking</button>
+              <button class="filter-button" data-filter="media">Media & Entertainment</button>
+              <button class="filter-button" data-filter="fmcg">FMCG</button>
+              <button class="filter-button" data-filter="nonprofit">Non-Profit</button>
+              <!-- Add more industry buttons as needed -->
+            </div>
+            <!-- Problem type filter buttons -->
+            <div class="problem-type-buttons">
+              <button class="main-button">Select Use Case</button>
+              <button class="filter-button" data-filter="all">All Use Cases</button>
+              <button class="filter-button" data-filter="propensity-modelling">Propensity Modelling</button>
+              <button class="filter-button" data-filter="marketing-strategy">Go-to-Market Strategy</button>
+              <button class="filter-button" data-filter="lead-generation">Lead Generation</button>
+              <button class="filter-button" data-filter="business-process-optimization">Business Process
+                Optimization</button>
+              <button class="filter-button" data-filter="algorithm-design">Algorithm Design</button>
+              <button class="filter-button" data-filter="price-optimization">Price Optimization</button>
+              <button class="filter-button" data-filter="optimization">Optimization</button>
+              <button class="filter-button" data-filter="credit-risk">Credit Risk Modelling</button>
+              <button class="filter-button" data-filter="merger">Merger & Acquisition</button>
+              <button class="filter-button" data-filter="ml-based-performance-strategy">AI Based Business
+                Strategy</button>
+              <button class="filter-button" data-filter="profit-driver">Profit Driver Analysis</button>
+              <button class="filter-button" data-filter="location-prioritization">Location Prioritization</button>
+              <!-- Add more problem type buttons as needed -->
+
+
+
+            <!-- </div> -->
+          </div>
+
+
+    </section>
+
+    <!-- <hr>
+      </hr> -->
+
+
+    <!-- Main Content -->
+    <section class="sample-text-area" style="background-color: rgb(246, 246, 246);">
+
+
+      <div class="container">
+
+        <!-- <div class="col-lg-10 col-md-10 col-sm-10 mx-auto"> -->
+
+
+
+        <!-- Experience 12 -->
+        <div class="row post-preview" data-industry="tech b2b" data-problem-type="business-process-optimization">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div> -->
+
+            <!-- <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Business Process Optimization: Streamlining Order to Cash pipeline Resulting in Addition of $300M in
+              Working Capital & Reduction of Throughput Time by 7 Days
+
+            </h3>
+            <br>
+            <p>
+
+
+              <!-- <hr> -->
+
+              <strong><i>Industry: Tech, B2B <br>
+                  Use Case: Business Process Optimization, Order 2 Cash Cycle Optimization, Process Mining</i></strong>
+              <br><br>
+
+
+              <strong><b>Situation:</b></strong>
+              A billion-dollar tech client was facing hurdles in their order to cash
+              processes, which were impacting high re-work, causing delivery delays, and leading to disputes.
+              The organization operated on SAP system, yet the lack of process transparency was
+              bottleneck to the business flow.
+              <br><br>
+              <strong><b>Task:</b></strong>
+              The task was to perform a diagnostic project to scrutinize and optimize the client's business processes,
+              understanding how the process flows right from creating a sales order to clearing the invoice. The
+              objective was to create a blue print in front of CFO and CEO to show the board how the process happens
+              in the org, what are the inefficiencies and what's the impact of that
+              <br><br>
+              <strong><b>Action:</b></strong>
+              Performed process mining using Celonis to delve into the SAP system. Performing ETL to convert SAP data
+              into process mining understandable format. Analyzed process flow right from "when a customer place an
+              order" to the goods have been issued and
+              customer "clear the billing". Analyzed and created dashboards discussing late-deliveries, un-billed
+              orders, late-billing orders, manual processes, re-work, late bill payments, order blocks, payment term
+              mismatches and disputes and analyzed these KPIs with it's impact on throughput time, automation,
+              customer satisfaction and working capital flow.
+              <br><br>
+              <strong><b>Result:</b></strong>
+              The optimization initiative led to a 70% reduction in order rejections, unlocked an additional $110M in
+              working capital flow, and reduced overall flow by 7 days. It also brought down payment term mismatches
+              by 20% and Days Sales Outstanding by 3 days.
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+
+        <!-- Experience 1 -->
+        <div class="row post-preview" data-industry="tech b2b"
+          data-problem-type="propensity-modelling, marketing-strategy, lead-generation">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div> -->
+
+            <!-- <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Winning Faster and More in B2B Sales using Machine Learning: A Leap from 0.4% to 20% Win Rate and
+              Quicker Lead Generation from 5 days to just 1 day
+
+            </h3>
+            <br>
+            <p>
+
+              <strong><i>Industry: Software Provider, B2B <br>
+                  Use Case: Propensity Modelling, Go-to-Market Strategy, Lead Generation</i></strong>
+              <br><br>
+
+              <strong><b>Situation:</b></strong>
+              The client, a B2B SaaS provider, struggled with their outbound sales motion, securing a dismal rate of 1
+              lead per 250 prospects contacted. Client also lacked a unified platform to analyze sales motion and reps
+              performance.
+              <br>
+              <br>
+              <strong><b>Task:</b></strong>
+              The task was to use Machine Learning to identify prospects with a high chance of conversion. The
+              objective was also to create a unified customer database & also to integrate 3rd party data to create a
+              customer 360 view and to create dashboard for C-suite to monitor motion's success.
+              <br>
+              <br>
+              <strong><b>Action:</b></strong>
+              Developed a propensity model to gauge the likelihood of winning a prospect, ensuring the sales team's
+              focus was directed towards high-quality leads. The task was to create an end to end pipeline that would
+              collect companies data from internal & multiple 3rd party sources and creating an algorithm that would
+              predict the probability to win the customer. The task was also to automate and deploy the pipeline in
+              client's environment so for every week the reps should get new leads to target. The pipeline would also
+              have an option to re-train the model if in future the client wants to update the algorithm. PRoject also
+              included creating a dashboard so the senior management can track the sales motion funnel and effectiveness
+              of the sales rep. We also used rule based algorithm to create custom messaging for client's which helps
+              sales rep to pitch the Product.
+              <br>
+              <br>
+              <strong><b>Result:</b></strong>
+              The newly created outbound acquisition strategy yielded a substantial results by increasing ratio of
+              successful leads from 0.4% to 20%.
+              The model, based on internal and 3rd party data, would select the prospects that have a high chance of
+              conversion. In the 9 weeks pilot, the model helped to lock $0.5M worth of business by targeting just
+              1000 prospects
+
+              <!-- 
+                            <p class="post-meta">
+                                Harrison Jansma on January 20, 2020</p> -->
+
+              <!-- <p class="post-meta">
+                                  <strong><b>Tools used: </b></strong>
+                                  &nbsp; <h6>Python</h6> &nbsp; <h6>LightGBM</h6>
+                              </p> -->
+
+
+              <!-- </div> -->
+
+          </div>
+
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+        <!-- Experience 2 -->
+        <div class="row post-preview" data-industry="government" data-problem-type="algorithm-design">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div> -->
+
+            <!-- <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Pioneering a National Agricultural Database: Connecting Farmers with Agricultural Lands
+
+            </h3>
+            <br>
+            <p>
+              <br>
+
+              <strong><i>Industry: Government <br>
+                  Use Case: Algorithm Designing, PoC</i></strong>
+              <br><br>
+
+
+              <strong><b>Situation:</b></strong>
+              The Central Government envisioned creating a distinctive national-level database that would amalgamate
+              agricultural land data with farmer information. This initiative was one of it's kind as no other
+              major country had ventured into such a project. The goal was to deliver a Proof of Concept (PoC) to the
+              Prime Minister's Office, highlighting the viability and possible success rate of the project<br><br>
+
+              <strong><b>Task:</b></strong>
+              The task was to classify provinces (States) based on their existing data infrastructure, technology
+              maturity, and database availability. Then for each category, design a PoCs to exhibit the efficacy of
+              tagging lands with farmer data.<br><br>
+
+              <strong><b>Action:</b></strong>
+              Commenced by scrutinizing the infrastructure, technology maturity, and database readiness in each
+              province. Following this, segregated each province into four segments based on the evaluations. A
+              distinct PoC was conceptualized for each category, totalling four PoCs. Then, developing a detailed
+              algorithm to map land record to farmer's databases based on multiple State and Central Gov databases,
+              voter identification cards & phonetic name matching of farmer. The success ratio of tagging
+              lands with farmers exhibited variation across the PoCs. In provinces characterized by high tech maturity
+              and database accessibility, a success rate of 60% was attained, while in others, it hovered at
+              22%.<br><br>
+
+              <strong><b>Result:</b></strong>
+              The diverse success rates across different provinces imparted invaluable insights into the hurdles and
+              potential remedies for this national-scale initiative. The case, along with the discoveries, was
+              presented to the Prime Minister's Office. The case initiated a significant milestone in pioneering
+              comprehensive agricultural database with the potential to revolutionize the nation's agricultural
+              framework.<br><br>
+
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+        <!-- Experience 3 -->
+        <div class="row post-preview" data-industry="industrialgoods" data-problem-type="price-optimization">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div> -->
+
+            <!-- <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Optimizing Profits through Intelligent Pricing: A Gain in 20% Additional Profit Margins for a
+              Semiconductor Manufacturer using Machine Learning & AI
+
+            </h3>
+            <br>
+            <p>
+
+              <strong><i>Industry: Industrial Goods <br>
+                  Use Case: Price Optimization</i></strong>
+              <br><br>
+
+              <strong><b>Situation:</b></strong>
+              The client, an industrial goods manufacturer specializing in lithium batteries, had an unstructured
+              pricing strategy that often led to offering higher discounts based on relationships with clients and
+              other factors. This lack of standard pricing was perceived as a potential hurdle to realizing higher
+              profit margins.<br><br>
+
+              <strong><b>Task:</b></strong>
+              The task was to devise a Price Optimization Algorithm that could standardize the pricing strategy,
+              taking into account price elasticity to ascertain how much the price could be increased without
+              affecting the significant demand. <br><br>
+
+              <strong><b>Action:</b></strong>
+              Developed a robust price optimization algorithm leveraging price elasticity and Linear Regression (LR)
+              to provide a structured pricing model. The algorithm was designed to recommend optimal pricing while
+              allowing for business-based discounting on top of the model's recommendation. This blended approach
+              ensured a balance between standardized pricing and the flexibility to offer discounts based on business
+              relationships and other factors.
+              <br><br>
+
+              <strong><b>Result:</b></strong>
+              The implementation of the price optimization algorithm resulted in a more structured and standardized
+              pricing strategy for the client with initial tests suggesting an increase in overall profit margins by
+              20%.
+
+              <br><br>
+
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+        <!-- Experience 4 -->
+        <div class="row post-preview" data-industry="government" data-problem-type="optimization">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+                <img class="portfolio-photo" src="img/git.jpg">
+                </a>
+              </div> -->
+
+            <!-- <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Solving Urban Transport Challenge: Non-linear Optimization solution for Better Transport Frequency
+              at reduced cost and crowding
+
+            </h3>
+            <br>
+            <p>
+
+              <strong><i>Industry: Government<br>
+                  Use Case: Optimization</i></strong>
+              <br><br>
+              <strong><b>Situation:</b></strong>
+              Public Transports (PT) in cities faced overcrowding problem, making them unattractive to the masses.
+              The
+              static timetable followed by transport agencies failed to adjust to varying demand dynamics, leading
+              to either low occupancy or
+              excessive crowding.<br><br>
+
+              <strong><b>Task:</b></strong>
+              The goal was to create an Optimization model to determine the optimal transport frequency,
+              that would minimize Operational Cost, Crowding Discomfort, and Waiting Time.<br><br>
+
+              <strong><b>Action:</b></strong>
+              Developed a Non-linear Optimization model considering operational costs, waiting time, and crowding
+              discomfort. The model was designed to be adaptable to different demand dynamics like holidays,
+              weekdays,
+              and peak hours, providing insights into ideal bus numbers for various routes.<br><br>
+
+              <strong><b>Result:</b></strong>
+              The model provided actionable insights on optimal bus deployment, leading to reduced operational
+              costs,
+              waiting time, and crowding discomfort. It showcased a potential reduction in road congestion, aligning
+              with the city's broader goals of enhancing urban mobility and reducing pollution.<br><br>
+
+
+
+          </div>
+
+          <!-- </div> -->
+          <hr width="100%" color="grey">
+        </div>
+
+
+        <!-- Experience 5 -->
+        <div class="row post-preview" data-industry="bank" data-problem-type="credit-risk">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div> -->
+
+            <!-- <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Fast-Track Financing: Harnessing Machine Learning for Speedy and Transparent Credit Evaluations
+
+            </h3>
+            <br>
+            <p>
+
+              <strong><i>Industry: Banking<br>
+                  Use Case: Credit Risk Modelling</i></strong>
+              <br><br>
+              <strong><b>Situation:</b></strong>
+              An India-based Non-Banking Financial Company (NBFC) had a robust decision-making mechanism for loan
+              disbursement, yet it took around 5 days to process a single application. The lengthy decision time was
+              seen as a bottleneck in enhancing their service efficiency.<br><br>
+
+              <strong><b>Task:</b></strong>
+              The task was to create a machine learning (ML) model to expedite the decision-making process by
+              providing a risk-based scoring to applicants, aiming to cut down the decision time and make the
+              process
+              more transparent.<br><br>
+
+              <strong><b>Action:</b></strong>
+              Developed a Credit Risk ML model using R, which leveraged bureau, financial, and application data to
+              score applicants. The model bucketed applications based on predicted risk, also providing reason codes
+              for the scores to maintain transparency in decision-making. This ensured that decision-makers were
+              well-informed on the rationale behind each score.<br><br>
+
+              <strong><b>Result:</b></strong>
+              The implementation of the ML model successfully reduced the decision time from 5 days to 3 days,
+              cutting
+              down 30% of the manual screening workload. The risk-based scoring and the transparency provided by the
+              reason codes expedited the loan disbursement process significantly, aligning with the goal of
+              enhancing
+              service efficiency for the NBFC.<br><br>
+
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+        <!-- Experience 6 -->
+        <div class="row post-preview" data-industry="media" data-problem-type="merger">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div> -->
+
+            <!-- <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Synergy-Driven Merger & Acquisition Strategy: Unveiling 7% Profit Boost opportunity in India's
+              Largest Media Merger
+
+            </h3>
+            <br>
+            <p>
+
+              <strong><i>Industry: Media & Entertainment<br>
+                  Use Case: Merger & Acquisition, Due-Diligence</i></strong>
+              <br><br>
+              <strong><b>Situation:</b></strong>
+              Merger of two largest Media and Entertainment player having combined share of 30%+ across genres
+              (sports, regional news, movies, music, kids & GECs) was on table. And the aim was to perform due
+              diligence and to understand the impact of merger on financial P&L, market share and negotiating
+              power to advertisers
+              <br><br>
+              <strong><b>Task:</b></strong>
+              The task was to work with 3rd party data provider (Nielsen) to get market overview and possible
+              impact of merger across genres. The task was also to analyses last 5 years of financial statements
+              and P&L sheet across channels and genres. Marrying these two facts, create a stroy line on
+              probabilistic market share and P&L growth along with opportunities to re-organise channels and
+              programmes in the portfolio.
+              <br><br>
+              <strong><b>Action:</b></strong>
+              several key actions were undertaken to assess the viability and potential synergies of the merger.
+              Utilizing BARC Data, viewership and reach metrics across various genres, regions, and demographics
+              were measured. To better understand the financial implications, projected P&Ls were constructed and
+              pressure-tested, assessing potential synergies. The analysis extended to estimating the M&A linear
+              synergy value, forecasting incremental M&A topline growth, and identifying cost synergies through
+              effective asset utilization.
+
+              <br><br>
+              <strong><b>Result:</b></strong>
+              A deep dive into India's two largest Media & Entertainment corporations revealed an estimated EBITDA
+              improvement of approximately 7%. Furthermore, an additional YoY revenue opportunity of around $20M
+              was identified owing to genre leadership and pricing improvement. The analysis also highlighted a
+              channel rationalization opportunity that could potentially reduce OPEX by 5% over five years.
+
+
+
+
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+        <!-- Experience 7 -->
+        <div class="row post-preview" data-industry="bank"
+          data-problem-type="ml-based-performance-strategy, profit-driver">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+                    <img class="portfolio-photo" src="img/git.jpg">
+                    </a>
+                  </div>
+
+                  <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Identifying "What drives Profit" using ML & AI & Creating Branch wise Strategy Blueprint for State-Owned
+              Bank
+
+
+            </h3>
+            <br>
+            <p>
+              <strong><i>Industry: Banking<br>
+                  Use Case: AI Based Business Strategy, Branch Performance Evaluation, Regression, Profit Driver
+                  Analysis </i></strong>
+              <br><br>
+              <strong><b>Situation:</b></strong>
+              A leading national bank was witnessing a dip in profitability, with a substantial number of
+              branches not meeting performance benchmarks. The bank's decision-making lacked the insights on how to
+              identify and measure if a branch in under/over performing and how to create a personalized strategy for
+              each branch.
+              <br><br>
+              <strong><b>Task:</b></strong>
+              The task was to design and deploy a predictive ML model to pinpoint profit drivers to understand what
+              drives profit. Then, identifying based on linear regression which branches are over/under performing. And
+              finally, creating a strategy for each branch based on its performance evaluation, profit margin, growth
+              and its location.
+              <br><br>
+              <strong><b>Action:</b></strong>
+              The first step was pooling data. Unified over 15 disparate datasets to create a comprehensive data
+              pool, offering a bird's-eye view of branch performance metrics. This was followed by the construction of
+              a Machine Learning model to identify the key profit drivers and evaluate branch performance. To
+              provide a 360-degree perspective, external market factors like demographics, points of interest, and
+              competitive advantages were incorporated, to identity location attractiveness score for each branch.
+              Based on
+              these insights, a bespoke strategy was recommended for every branch, centered around branch performance,
+              location attractiveness, growth, and revenue segment.
+              <br><br>
+              <strong><b>Result:</b></strong>
+              The strategic deployment lead to marked enhancement in branch performance
+              evaluation, revealing that over 40% of branches had room for improvement. The real win was the revelation
+              that
+              these underperformed branches held the potential to amplify their profits by 10%-50%. The bank now had
+              a clear set of actionable recommendations for each branch, setting the stage for a significant uptick in
+              profitability.
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+
+        <!-- Experience 8 -->
+        <div class="row post-preview" data-industry="retail fmcg" data-problem-type="marketing-strategy">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+                    <img class="portfolio-photo" src="img/git.jpg">
+                    </a>
+                  </div>
+
+                  <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Leading the Snack Race: Pack-Price-Distribution Strategy to Win Additional 0.3% Market Share in $45B
+              Category
+
+            </h3>
+            <br>
+            <p>
+
+              <strong><i>Industry: Retail, FMCG<br>
+                  Use Case: Marketing-Mix Strategy, Pack-Price-Distribution Strategy</i></strong>
+              <br><br>
+
+
+              <strong><b>Situation:</b></strong>
+              India’s largest snacking brand was navigating a highly competitive USD 45 billion market. With
+              emerging
+              competitors, there was a need to understand the threats to its market leadership and identify new growth
+              avenues.
+              <br><br>
+              <strong><b>Task:</b></strong>
+              The task was to lead a team of five in formulating a comprehensive pack-price-distribution
+              strategy.
+              This strategy was to be rooted in market research data, focusing on understanding competitor
+              growth
+              patterns, their pricing and promotional tactics, and identifying untapped distribution pockets.
+              <br><br>
+              <strong><b>Action:</b></strong>
+              Dove deep into market research data to identify insights into where and how competitors were gaining
+              traction. Analyzed competitors' promotions and pricing strategies to understand their market share
+              acquisition tactics. Simultaneously, explored new distribution growth pockets to expand the
+              brand's
+              reach and influence. The team crafted a pack-price-distribution strategy that was
+              both
+              responsive to competitor moves and proactive in tapping into new market segments.
+              <br><br>
+              <strong><b>Result:</b></strong>
+              The strategy was a resounding success. It not only fortified the brand's defenses
+              against
+              potential threats from competitors but also paved the way for growth, unlocking an additional 0.3%
+              market share in the vast snack market category. This strategic move reinforced the brand's market
+              leadership and set a benchmark for navigating competition in the snacking sector.
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+
+        <!-- Experience 9 -->
+        <div class="row post-preview" data-industry="retail fmcg" data-problem-type="marketing-strategys">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+                    <img class="portfolio-photo" src="img/revamp_distri.png">
+                    </a>
+                  </div>
+
+                  <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Decoding FMCG Success: A Deep Dive into Product Innovation and Distribution in Indian FMCG Market
+
+            </h3>
+            <br>
+            <p>
+
+              <strong><i>Industry: Retail, FMCG<br>
+                  Use Case: Marketing-Mix Strategy, Pack-Price-Distribution Strategy</i></strong>
+              <br><br>
+
+              <strong><b>Situation:</b></strong>
+              One of India's largest FMCG firms was struggling with pinpointing new growth avenues in the
+              Indian market. While they held a significant market position, understanding the strategies that
+              helped other players to growth was essential to stay ahead in the game.
+              <br> <br>
+              <strong><b>Task:</b></strong>
+              The objective was to design a comprehensive case study titled "Revamping distribution through
+              Product
+              Innovation." The aim was to dissect the strategies employed by various FMCG players across
+              categories
+              over the last decade, understand their growth levers, and draw actionable insights for the client.
+              <br> <br>
+              <strong><b>Action:</b></strong>
+              Embarked on an exhaustive analysis of the Indian FMCG landscape, studying all categories. From
+              each
+              category, brands were chosen based on their market position:
+              1. Market leaders
+              2. Those close to market leaders
+              3. Exceptional growth players
+              4. Regional players expanding nationally.
+
+              For these selected brands, a deep dive was conducted into their growth over the past 5 years,
+              analyzing
+              aspects like distribution, price, packaging, and promotion. Using these insights, a robust case
+              study
+              was crafted, outlining a strategic roadmap for the client to target the Indian market over the
+              next
+              three years.
+              <br> <br>
+              <strong><b>Result:</b></strong>
+              The case study was well-received & was
+              presented to the CEO and the board of directors, setting a new benchmark for strategic planning in
+              the
+              FMCG sector; it was appreciated and achieved an "Exceeds Expectations" rating for
+              the depth and quality of analyses.
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+        <!-- Experience 10 -->
+        <div class="row post-preview" data-industry="nonprofit"
+          data-problem-type="ml-based-performance-strategy, profit-driver">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              leveraging AI for Revamping Branch Strategies for Non-Profit Asset Management
+            </h3>
+            <br>
+            <p>
+              <br>
+
+              <strong><i>Industry: Non-Profit<br>
+                  Use Case: AI Based Business Strategy, Branch Performance Evaluation, Regression, Profit Driver
+                  Analysis </i></strong>
+              <br><br>
+
+              <strong><b>Situation:</b></strong>
+              A prominent Non-Profit firm, managing assets for 400,000 individuals across 200 Indian cities,
+              was struggling with understanding the profit drivers for its numerous branches. With branches dotted
+              across diverse
+              cities, understanding which ones were hitting the mark and which ones were lagging was crucial.
+              <br> <br>
+              <strong><b>Task:</b></strong>
+              The task was to utilize Machine Learning to identify key contribution drivers for each
+              branch,
+              evaluate their performance, and craft a tailored strategy. This strategy would be based on each
+              branch's
+              growth, performance, and capital metrics.
+              <br> <br>
+              <strong><b>Action:</b></strong>
+              Developed a robust Machine Learning module that analyzed branch data, extracting
+              insights on profit drivers and performance metrics. The module segmented branches into distinct buckets
+              based on
+              their growth trajectory, operational performance, and capital allocation. Using these
+              categorizations,
+              individualized strategies were devised for each branch, ensuring that the approach was both
+              data-driven
+              and customized to each branch's unique challenges and opportunities.
+              <br> <br>
+              <strong><b>Result:</b></strong>
+              The ML-infused strategy provided a roadmap to enhanced
+              operational
+              efficiency. The insights were so impactful that the case was presented directly to the board of
+              trustees. The recommendations didn't just end as a presentation slide; they were incorporated into
+              the
+              next year's strategy planning, cementing the role of Machine Learning in driving strategic
+              decisions for
+              the non-profit.
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+
+        <!-- Experience 11 -->
+        <div class="row post-preview" data-industry="telco"
+          data-problem-type="location-prioritization, ml-based-performance-strategy">
+          <div class="row post-preview d-flex">
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex justify-content-center img-fluid align-self-center"> -->
+            <!-- <div class="col-lg-3 col-md-3 col-xs-3 d-flex align-items-center">
+              <img class="portfolio-photo" src="img/git.jpg">
+              </a>
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-xs-9"> -->
+            <h3 class="post-title">
+              Mapping the 5G Future: GeoClustering Approach to Investment Priorities for Vodafone UK
+            </h3>
+            <p>
+              <br>
+
+              <strong><i>Industry: Telecommunication<br>
+                  Use Case: Location prioritization, AI Based Business Strategy </i></strong>
+              <br><br>
+            <p><strong><b>Situation:</b></strong>
+              Vodafone UK was poised to invest in the promising arena of 5G technology. However, with multiple
+              locations vying for investment, the challenge was to determine which locations would be the most
+              strategic and offer the best return on investment.
+              <br><br>
+              <strong><b>Task:</b></strong>
+              The task was to design a robust ranking methodology that could prioritize these locations
+              effectively
+              for 5G investments. This methodology would ensure that Vodafone UK's investments were
+              strategically
+              placed to maximize impact and profitability.
+              <br><br>
+              <strong><b>Action:</b></strong>
+              Multiple GeoClustering algorithms were stacked together to divide geographies into relatable and
+              cohesive areas. The geographies were divided based on their physical proximity, competitors
+              investment strategies, point of interests (business park, public place etc.), internet and bandwidth
+              consumption and demographic features. These clusters were then ranked and prioritized based on Vodafone
+              UK's strategic
+              objectives, ensuring that the areas selected for investment were in line with the company's broader 5G
+              vision.
+              <br><br>
+              <strong><b>Result:</b></strong>
+              The GeoClustering ML approach provided Vodafone UK with a clear and actionable roadmap for their
+              5G
+              investments. Locations were not just chosen based on their inherent potential, but on a
+              comprehensive
+              strategy that took into account various factors to ensure optimal investment placement. This
+              strategic
+              initiative streamlined Vodafone UK's investment process, ensuring they were positioned to lead in
+              the 5G
+              revolution.
+
+
+
+              <!-- </div> -->
+
+          </div>
+          <hr width="100%" color="grey">
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+    <script>
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const projectRows = document.querySelectorAll('.post-preview');
+
+      // Add event listeners to filter buttons
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filter = button.getAttribute('data-filter');
+          // Hide all project rows
+          projectRows.forEach(row => {
+            row.style.display = 'none';
+          });
+          // Show project rows matching the selected filter
+          projectRows.forEach(row => {
+            const industryAttr = row.getAttribute('data-industry');
+            // Check if data-industry attribute is not empty or undefined
+            const industries = industryAttr ? industryAttr.split(' ') : [];
+            const problemAttr = row.getAttribute('data-problem-type');
+            const problems = problemAttr ? problemAttr.split(', ') : [];
+
+            if (filter === 'all' || industries.includes(filter) || problems.includes(filter)) {
+              // const problemType = row.getAttribute('data-problem-type');
+              // if (filter === 'all' || industries.includes(filter) || filter === problemType) {
+              row.style.display = 'block';
+            }
+          });
+        });
+      });
+    </script>
+
+
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h4>About This Page</h4>
+              <p class="footer-text">
+                This website was coded in HTML, CSS, and Javascript based on a theme from Colorlib. It is hosted on a
+                LAMP server from DigitalOcean. The code can be found <a
+                  href="https://github.com/harrisonjansma/cv-website" target="_blank"> here.</a>
+              </p>
+              <p class="footer-text">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                  aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h4>Newsletter</h4>
+              <p>Stay updated with my latest projects</p>
+              <div class="" id="mc_embed_signup">
+                <form target="_blank"
+                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  method="get">
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address"
+                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required=""
+                      type="email">
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit">
+                        <span class="lnr lnr-arrow-right"></span>
+                      </button>
+                    </div>
+                    <div class="info"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+            <div class="single-footer-widget">
+              <h4>Follow Me</h4>
+              <p>Let's be social. </p>
+              <div class="footer-social d-flex align-items-center">
+                <a href="https://medium.com/@harrisonjansma"><i class="fa fa-medium"></i></a>
+                <a href="http://www.linkedin.com/in/harrisonjansma"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/harrisonjansma"><i class="fa fa-github"></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer Area -->
+
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.tabs.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/simple-skillbar.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a855551456.js" crossorigin="anonymous"></script>
+  </body>
+
+</html>
